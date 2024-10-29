@@ -15,7 +15,7 @@ void printEvenOrOdd(int number)
 int getNumberFromUser(void)
 {
     int number;
-    printf("Input Number:\n");
+    printf("Input integer Number:\n");
     scanf("%d", &number);
     return number;
 }

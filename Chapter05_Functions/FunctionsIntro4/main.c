@@ -2,13 +2,12 @@
 
 int divisibleBy2(int number);
 int divisibleBy3(int number);
-void printDivisibilty(int number);
-int getNumberFromUser();
+void printDivisibility(int number);
+int getNumberFromUser(void);
 
-int main()
+int main(void)
 {
-    int n = getNumberFromUser();
-    printDivisibilty(n);
+    printDivisibility(getNumberFromUser());
 
     return 0;
 }
@@ -23,29 +22,26 @@ int divisibleBy3(int number)
     return number % 3 == 0;
 }
 
-void printDivisibilty(int n)
+
+void printDivisibility(int number)
 {
-    if (divisibleBy2(n))
+    if (divisibleBy2(number))
     {
-        printf("%d divisible by 2!\n", n);
+        printf("%d is divisible by 2!\n", number);
         return;
     }
-
-    if (divisibleBy3(n))
+    if(divisibleBy3(number))
     {
-        printf("%d divisible by 3!\n", n);
+        printf("%d is divisible by 3!\n", number);
         return;
     }
-
-    printf("%d none!\n", n);
+    printf("%d none!\n", number);
 }
 
-int getNumberFromUser()
+int getNumberFromUser(void)
 {
-    int number = 0;
-
-    printf("Please enter an integer number: ");
+    int number;
+    printf("Input integer Number:\n");
     scanf("%d", &number);
-
     return number;
 }
