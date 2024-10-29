@@ -7,6 +7,7 @@ uint32_t factorial(uint32_t n)
     {
         return 1;
     }
+
     return(n * factorial(n - 1));
 }
 

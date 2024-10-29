@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/RecursiveFunction",
-      "program": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/RecursiveFunction/build/Debug/outDebug"
+      "cwd": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/PostVsPreIncrement",
+      "program": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/PostVsPreIncrement/build/Debug/outDebug"
     }
   ]
 }
