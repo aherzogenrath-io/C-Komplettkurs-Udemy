@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/arnoherzogenrath/Desktop/UdemyC-master/Chapter04_Loops/_Exercise",
-      "program": "/Users/arnoherzogenrath/Desktop/UdemyC-master/Chapter04_Loops/_Exercise/build/Debug/outDebug"
+      "cwd": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/FunctionsIntro2",
+      "program": "/Users/arnoherzogenrath/Documents/Projects/UdemyC-master/Chapter05_Functions/FunctionsIntro2/build/Debug/outDebug"
     }
   ]
 }

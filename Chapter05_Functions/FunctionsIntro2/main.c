@@ -12,20 +12,17 @@ void printEvenOrOdd(int number)
     }
 }
 
-int getNumberFromUser()
+int getNumberFromUser(void)
 {
-    int number = 0;
-
-    printf("Please enter an integer number: ");
+    int number;
+    printf("Input Number:\n");
     scanf("%d", &number);
-
     return number;
 }
 
-int main()
+int main(void)
 {
-    int n = getNumberFromUser();
-    printEvenOrOdd(n);
+    printEvenOrOdd(getNumberFromUser());
 
     return 0;
 }
