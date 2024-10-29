@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     // Quadrat: Seitenlänge a vom User einlesen
     // Überprüfe: Ob der User eine "gültige" Zahl eingegeben hat
@@ -11,29 +11,25 @@ int main()
     // Gebe diese Werte dann in der Konsole aus
     // u = 4 * a
     // a = a**2
-
-    bool is_valid_number = false;
-    float a;
-
-    while (is_valid_number == false)
+    float seitenlänge;
+    float umfang;
+    float fläche;
+    while (true)
     {
-        printf("Please enter the value for a: ");
-        scanf("%f", &a);
-
-        if (a > 0.0)
-        {
-            is_valid_number = true;
-        }
-        else
-        {
-            printf("You entered an invalid number!\n");
-        }
+    printf("Seitenlänge des Quadrats:");
+    scanf("%f", &seitenlänge);
+    if (seitenlänge > 0.0F){
+        break;
     }
+    printf("ERROR! Ungültige Seitenlänge\n");
+    }
+    umfang = 4 * seitenlänge;
+    fläche = seitenlänge * seitenlänge;
 
-    float perimeter = 4 * a;
-    float area = a * a;
+    printf("Umfang des Quadrats: %f\n", umfang);
+    printf("Fläche des Quadrats: %f\n", fläche);
 
-    printf("Permieter %f, area %f", perimeter, area);
 
     return 0;
+
 }

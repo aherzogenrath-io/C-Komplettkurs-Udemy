@@ -10,46 +10,43 @@ enum Beverage
     COFFEE,
 };
 
-int main()
+enum CaffeineBeverage
 {
-    enum Beverage selected_beverage = NO_BEVERAGE;
-    printf("Select a beverage:\nWater (1), Cola (2), Fanta (3)\nSprite (4), "
-           "Coffee (5)\n");
+    CAFFEINE_BEVERAGE_COFFEE,
+    CAFFEINE_BEVERAGE_ENERGY_DRINK,
+
+}
+
+int main(void)
+{
+    enum Beverage selected_beverage;
+    printf("select a beverage:\nWater(1), Cola(2), Fanta(3), \nSprite(4), Coffee(5)\n");
     scanf("%d", &selected_beverage);
 
-    switch (selected_beverage)
-    {
-    case WATER:
-    {
-        printf("You selected a water\n");
-        break;
+    switch(selected_beverage){
+        case WATER: {
+            printf("you selected Water.\n");
+            break;
+        }
+        case COLA: {
+            printf("you selected Cola.\n");
+            break;
+        }
+        case FANTA:{
+            printf("you selected Fanta.\n");
+            break;
+        }
+        case SPRITE:{
+            printf("you selected Sprite.\n");
+            break;
+        }
+        case COFFEE:{
+            printf("you selected Coffee .\n");
+            break;
+        }
+        default:{
+            printf("ERROR wrong input\n");
+        }
     }
-    case COLA:
-    {
-        printf("You selected a Cola\n");
-        break;
-    }
-    case FANTA:
-    {
-        printf("You selected a Fanta\n");
-        break;
-    }
-    case SPRITE:
-    {
-        printf("You selected a Sprite\n");
-        break;
-    }
-    case COFFEE:
-    {
-        printf("You selected a Coffee\n");
-        break;
-    }
-    default:
-    {
-        printf("You selected an invalid Beverage!\n");
-        break;
-    }
-    }
-
     return 0;
 }

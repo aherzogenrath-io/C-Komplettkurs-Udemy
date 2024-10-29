@@ -1,15 +1,25 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    int i = 0;
+    float sum = 0.0F;
+    float user_input;
 
-    while (i < 3) // true, false (bzw. 0, 1)
+    while (true)
     {
-        printf("Hello World!\n");
-        i++;
-    }
+        scanf("%f", &user_input);
 
+        if (user_input > 10)
+        {
+            continue;
+        }
+        if (user_input < 0.0F)
+        {
+            printf("%f", sum);
+            break;
+        }
+         sum += user_input;
+   }
     return 0;
 }
