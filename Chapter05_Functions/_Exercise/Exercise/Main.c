@@ -1,20 +1,14 @@
-#include <math.h>
 #include <stdio.h>
 
 #include "Lib.h"
 
-int main()
+int main(void)
 {
     int a = getNumberFromUser();
     int b = getNumberFromUser();
-
-    int number_max = max(a, b);
-    int number_min = min(a, b);
-    float number_mean = mean(a, b);
-
-    printf("Max{%d, %d} = %d\n", a, b, number_max);
-    printf("Min{%d, %d} = %d\n", a, b, number_min);
-    printf("Mean[%d, %d] = %f\n", a, b, number_mean);
+    printf("Max{%d, %d} = %d\n", a, b, min(a, b));
+    printf("Min{%d, %d} = %d\n", a, b, max(a, b));
+    printf("Mead{%d, %d} = %f\n", a, b, mean(a, b));
 
     return 0;
-}
+    }

@@ -1,8 +1,13 @@
 #include <stdio.h>
 
-#include "Lib.h"
+#ifndef LIB_H
+#define LIB_H
 
-int getNumberFromUser()
+int getNumberFromUser(void);
+
+#endif
+
+int getNumberFromUser(void)
 {
     int number_from_user;
 

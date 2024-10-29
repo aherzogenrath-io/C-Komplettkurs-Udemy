@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int getNumberFromUser()
+int getNumberFromUser(void)
 {
     int number_from_user;
 

@@ -1,4 +1,4 @@
-int getNumberFromUser();
+int getNumberFromUser(void);
 
 int max(int number_a, int number_b);
 

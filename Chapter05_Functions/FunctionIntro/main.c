@@ -1,26 +1,20 @@
 #include <stdio.h>
+#include "lib.h"
 
-void printEvenOrOdd(int number)
-{
-    if (number % 2 == 0)
-    {
-        printf("%d is even!\n", number);
-    }
-    else
-    {
-        printf("%d is odd!\n", number);
-    }
-}
+
 
 int main(void)
 {
-    int a = 2;
-    int b = 3;
-    int c = 4;
+    int a;
+    printf("Enter integer Number:\n");
+    scanf("%d", &a);
 
-    printEvenOrOdd(a);
-    printEvenOrOdd(b);
-    printEvenOrOdd(c);
+    if (printEvenOrOdd(a) == 1) {
+        printf("%d is an even number\n", a);
+    } else{
+        printf("%d is an odd number\n", a);
+    }
+
 
     return 0;
 }

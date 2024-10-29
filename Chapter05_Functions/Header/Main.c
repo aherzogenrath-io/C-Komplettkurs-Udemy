@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#include "Lib.h"
+#include "lib.h"
 
-int main()
+int main(void)
 {
     int user_number = getNumberFromUser();
 

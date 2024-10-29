@@ -1,25 +1,56 @@
 #include <stdio.h>
 
-#include "Lib.h"
+#ifndef LIB_H
+#define LIB_H
 
-int getNumberFromUser()
+int getNumberFromUser(void);
+int min(int, int);
+int max(int, int);
+float mean(int, int);
+
+#endif
+
+int getNumberFromUser(void)
 {
-    int number_from_user; //0x00: 12
-
-    printf("Pls enter a integer number!\n");
-    scanf("%d", &number_from_user);
-
-    return number_from_user; // return 12;
+    int a;
+    printf("Enter number:\n");
+    scanf("%d", &a);
+    return a;
 }
 
-int max(int number_a, int number_b)
+int min(int a, int b)
 {
+    if (a > b)
+    {
+        return b;
+    } else if (a < b)
+    {
+        return a;
+    }
+    else
+    {
+        printf("Numbers are equal\n");
+        return a;
+    }
 }
 
-int min(int number_a, int number_b)
+int max(int a, int b)
 {
+    if (a > b)
+    {
+        return a;
+    } else if (a < b)
+    {
+        return b;
+    }
+    else
+    {
+        printf("Numbers are equal\n");
+        return a;
+    }
 }
 
-float mean(int number_a, int number_b)
+float mean(int a, int b)
 {
+    return (a + b) / 2.0f;
 }

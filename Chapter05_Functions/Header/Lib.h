@@ -1,1 +1,1 @@
-int getNumberFromUser();
+int getNumberFromUser(void);

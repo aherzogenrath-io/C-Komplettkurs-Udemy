@@ -2,7 +2,7 @@
 
 #include "Lib.h"
 
-int main()
+int main(void)
 {
     int user_number = getNumberFromUser();
 

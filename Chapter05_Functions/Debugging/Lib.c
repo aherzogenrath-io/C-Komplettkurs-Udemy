@@ -2,7 +2,7 @@
 
 #include "Lib.h"
 
-int getNumberFromUser()
+int getNumberFromUser(void)
 {
     int number_from_user; //0x00: 12
 
